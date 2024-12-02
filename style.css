@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: #ffffff;
+}
+
+.main-container {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    background: rgb(199, 197, 197);
+    border-radius: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around; /* Space links evenly */
+    align-items: center;
+    background-color: #333; /* Dark background */
+    position: fixed; /* Fixes the navbar to the top */
+    top: 0;
+    height: 30px;
+    width: 100%;
+    padding: 1rem 0; /* Adds padding for better spacing */
+    z-index: 10; /* Ensures it stays above other elements */
+}
+
+.navbar .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.navbar .nav-link:hover {
+    background-color: #555; /* Changes color on hover */
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.current-weather {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    color: #333;
+
+}
+
+.current-date {
+    font-size: 1.0em;
+    color: #555;
+}
+
+.current-temp {
+    font-size: 2.5em;
+    font-weight: bold;
+    color:#0288d1 ;
+    margin: 5px 0;
+}
+
+.current-description {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-container input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    width: 60%;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0288d1;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.forecast-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.forecast-day {
+    width: 100px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.day {
+    font-weight: bold;
+    font-size: 1em;
+    color: #0288d1;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.temperature {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* General styles for the footer */
+.site-footer {
+    background-color: #333; /* Dark background color */
+    color: white;
+    text-align: center;
+    padding: 1rem 0; /* Adds padding for spacing */
+    position: fixed; /* Fixes the footer to the bottom */
+    bottom: 0;
+    width: 100%;
+    z-index: 10; /* Ensures it stays above other elements */
+    font-size: 0.9rem;
+    height: 30px;
+}
+
+/* Optional: Add padding to main content to avoid overlapping */
+.main-container {
+    padding-bottom: 10rem;
+    margin-top: 60px; /* Adjust to the height of the navbar */
+    margin-bottom: 60px; /* Adjust to the height of the footer */
+    overflow-y: auto;
+    padding: 1rem;
+    max-height: calc(100vh - 120px);}
+
+
+    #loading-message {
+        font-size: 1.2em;
+        text-align: center;
+        margin: 10px 0;
+        color: #555;
+    }
+    
+    .location-name {
+        font-size: 1.6em;
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+        background-color: #69a5ea; /* Light blue background */
+        padding: 10px 20px;
+        margin: 20px auto;
+        width: fit-content; /* Centers the text box */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 0.5px; /* Small spacing for readability */
+        transition: transform 0.3s ease; /* Adds animation on hover */
+    }
+    
+    .location-name:hover {
+        transform: scale(1.05); /* Slightly enlarges hover */
+    }
+
+    
+
+      
